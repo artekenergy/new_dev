@@ -1,0 +1,183 @@
+.dropdownContainer {
+  position: relative;
+  width: 100%;
+  margin-bottom: 0.75rem;
+  z-index: 1000; /* Add this to ensure proper stacking */
+}
+  
+  .dropdownHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+    user-select: none;
+    min-height: 0px;
+  }
+  
+  .dropdownHeader:focus {
+    outline: none;
+    border-color: var(--accent-color);
+    box-shadow: 0 0 0 2px rgba(var(--accent-color-rgb), 0.25);
+  }
+  
+  .dropdownHeader.disabled {
+    background-color: #f0f0f0;
+    color: #888;
+    cursor: not-allowed;
+  }
+  
+  .selectedOption {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+  }
+  
+  .placeholder {
+    color: #777;
+    font-style: italic;
+  }
+  
+  .arrow {
+    font-size: 0.7rem;
+    color: #777;
+    margin-left: 8px;
+  }
+  
+  .dropdownList {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    max-height: 120px; /* Significantly increase max height */
+    overflow-y: auto;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    z-index: 1000; /* Substantially higher z-index */
+    margin-top: 2px;
+  }
+  
+  .dropdownItem {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem;
+    cursor: pointer;
+    justify-content: center;
+  }
+  
+  .dropdownItem:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .dropdownItem.selected {
+    background-color: #eaf3ff;
+  }
+  
+  .iconsGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(50px, 1fr)); /* Slightly smaller cells */
+    gap: 6px; /* Reduced gap */
+    padding: 12px;
+    padding-bottom: 24px; /* More bottom padding */
+  }
+  
+  .iconItem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 6px; /* Slightly smaller padding */
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 2px; /* Add a small margin to bottom */
+  }
+  
+  .iconItem:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .iconItem.selected {
+    background-color: #eaf3ff;
+    box-shadow: 0 0 0 2px var(--accent-color, #0070f3);
+  }
+  
+  .iconWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 4px;
+    background-color: white;
+  }
+  
+  .iconWrapper img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+  }
+
+  /* Add these styles to IconDropdown.module.css */
+.iconPreview {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.iconName {
+  font-size: 0.9rem;
+  color: #333;
+  max-width: 150px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.selectedIndicator {
+  position: absolute;
+  bottom: -2px;
+  right: -2px;
+  width: 10px;
+  height: 10px;
+  background: #4caf50;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+
+.iconWrapper {
+  position: relative;
+}
+
+.iconPreview {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 2px 0;
+  max-width: 100%;
+}
+
+.iconName {
+  font-size: 14px;
+  color: #444;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  text-transform: capitalize;
+}
+
+.selectedOption {
+  flex: 1;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+.placeholder {
+  color: #888;
+  font-style: italic;
+}

@@ -1,0 +1,12 @@
+{
+  "short_name": "New Application 2",
+  "name": "New Application 2",
+  "icons": [
+    {
+      "type": "image/png"
+    }
+  ],
+  "start_url": "index2.html",
+  "display": "standalone",
+  "orientation": "landscape"
+}

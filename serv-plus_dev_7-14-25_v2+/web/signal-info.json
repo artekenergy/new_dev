@@ -1,0 +1,902 @@
+[
+  {
+    "signalId": 2,
+    "description": "channel-1-dcu",
+    "type": 0,
+    "channelType": 3,
+    "dataItemFormatType": 0,
+    "dataType": 0,
+    "channelSettingType": 0
+  },
+  {
+    "signalId": 3,
+    "description": "channel-1-ramping",
+    "type": 0,
+    "channelType": 1,
+    "dataItemFormatType": 0,
+    "dataType": 0,
+    "channelSettingType": 0
+  },
+  {
+    "signalId": 4,
+    "description": "channel-1-dimming",
+    "type": 0,
+    "channelType": 1,
+    "dataItemFormatType": 0,
+    "dataType": 0,
+    "channelSettingType": 0
+  },
+  {
+    "signalId": 5,
+    "description": "channel-2-pbc",
+    "type": 0,
+    "channelType": 1,
+    "dataItemFormatType": 0,
+    "dataType": 0,
+    "channelSettingType": 0
+  },
+  {
+    "signalId": 6,
+    "description": "channel-2-dcu",
+    "type": 0,
+    "channelType": 3,
+    "dataItemFormatType": 0,
+    "dataType": 0,
+    "channelSettingType": 0
+  },
+  {
+    "signalId": 7,
+    "description": "channel-2-ramping",
+    "type": 0,
+    "channelType": 1,
+    "dataItemFormatType": 0,
+    "dataType": 0,
+    "channelSettingType": 0
+  },
+  {
+    "signalId": 8,
+    "description": "channel-2-dimming",
+    "type": 0,
+    "channelType": 1,
+    "dataItemFormatType": 0,
+    "dataType": 0,
+    "channelSettingType": 0
+  },
+  {
+    "signalId": 9,
+    "description": "channel-3-pbc",
+    "type": 0,
+    "channelType": 1,
+    "dataItemFormatType": 0,
+    "dataType": 0,
+    "channelSettingType": 0
+  },
+  {
+    "signalId": 10,
+    "description": "channel-3-dcu",
+    "type": 0,
+    "channelType": 3,
+    "dataItemFormatType": 0,
+    "dataType": 0,
+    "channelSettingType": 0
+  },
+  {
+    "signalId": 11,
+    "description": "channel-3-ramping",
+    "type": 0,
+    "channelType": 1,
+    "dataItemFormatType": 0,
+    "dataType": 0,
+    "channelSettingType": 0
+  },
+  {
+    "signalId": 12,
+    "description": "channel-3-dimming",
+    "type": 0,
+    "channelType": 1,
+    "dataItemFormatType": 0,
+    "dataType": 0,
+    "channelSettingType": 0
+  },
+  {
+    "signalId": 13,
+    "description": "channel-4-pbc",
+    "type": 0,
+    "channelType": 1,
+    "dataItemFormatType": 0,
+    "dataType": 0,
+    "channelSettingType": 0
+  },
+  {
+    "signalId": 14,
+    "description": "channel-4-dcu",
+    "type": 0,
+    "channelType": 3,
+    "dataItemFormatType": 0,
+    "dataType": 0,
+    "channelSettingType": 0
+  },
+  {
+    "signalId": 15,
+    "description": "channel-4-ramping",
+    "type": 0,
+    "channelType": 1,
+    "dataItemFormatType": 0,
+    "dataType": 0,
+    "channelSettingType": 0
+  },
+  {
+    "signalId": 16,
+    "description": "channel-4-dimming",
+    "type": 0,
+    "channelType": 1,
+    "dataItemFormatType": 0,
+    "dataType": 0,
+    "channelSettingType": 0
+  },
+  {
+    "signalId": 17,
+    "description": "channel-5-pbc",
+    "type": 0,
+    "channelType": 1,
+    "dataItemFormatType": 0,
+    "dataType": 0,
+    "channelSettingType": 0
+  },
+  {
+    "signalId": 18,
+    "description": "channel-5-dcu",
+    "type": 0,
+    "channelType": 3,
+    "dataItemFormatType": 0,
+    "dataType": 0,
+    "channelSettingType": 0
+  },
+  {
+    "signalId": 19,
+    "description": "channel-5-ramping",
+    "type": 0,
+    "channelType": 1,
+    "dataItemFormatType": 0,
+    "dataType": 0,
+    "channelSettingType": 0
+  },
+  {
+    "signalId": 20,
+    "description": "channel-5-dimming",
+    "type": 0,
+    "channelType": 1,
+    "dataItemFormatType": 0,
+    "dataType": 0,
+    "channelSettingType": 0
+  },
+  {
+    "signalId": 21,
+    "description": "channel-6-pbc",
+    "type": 0,
+    "channelType": 1,
+    "dataItemFormatType": 0,
+    "dataType": 0,
+    "channelSettingType": 0
+  },
+  {
+    "signalId": 22,
+    "description": "channel-6-dcu",
+    "type": 0,
+    "channelType": 3,
+    "dataItemFormatType": 0,
+    "dataType": 0,
+    "channelSettingType": 0
+  },
+  {
+    "signalId": 23,
+    "description": "channel-6-ramping",
+    "type": 0,
+    "channelType": 1,
+    "dataItemFormatType": 0,
+    "dataType": 0,
+    "channelSettingType": 0
+  },
+  {
+    "signalId": 24,
+    "description": "channel-6-dimming",
+    "type": 0,
+    "channelType": 1,
+    "dataItemFormatType": 0,
+    "dataType": 0,
+    "channelSettingType": 0
+  },
+  {
+    "signalId": 83,
+    "description": "channel-1-pbc",
+    "type": 0,
+    "channelType": 1,
+    "dataItemFormatType": 0,
+    "dataType": 0,
+    "channelSettingType": 0
+  },
+  {
+    "signalId": 89,
+    "description": "channel-1-momentary",
+    "type": 0,
+    "channelType": 1,
+    "dataItemFormatType": 0,
+    "dataType": 0,
+    "channelSettingType": 0
+  },
+  {
+    "signalId": 90,
+    "description": "channel-2-momentary",
+    "type": 0,
+    "channelType": 1,
+    "dataItemFormatType": 0,
+    "dataType": 0,
+    "channelSettingType": 0
+  },
+  {
+    "signalId": 91,
+    "description": "channel-3-momentary",
+    "type": 0,
+    "channelType": 1,
+    "dataItemFormatType": 0,
+    "dataType": 0,
+    "channelSettingType": 0
+  },
+  {
+    "signalId": 92,
+    "description": "channel-4-momentary",
+    "type": 0,
+    "channelType": 1,
+    "dataItemFormatType": 0,
+    "dataType": 0,
+    "channelSettingType": 0
+  },
+  {
+    "signalId": 93,
+    "description": "channel-5-momentary",
+    "type": 0,
+    "channelType": 1,
+    "dataItemFormatType": 0,
+    "dataType": 0,
+    "channelSettingType": 0
+  },
+  {
+    "signalId": 94,
+    "description": "channel-6-momentary",
+    "type": 0,
+    "channelType": 1,
+    "dataItemFormatType": 0,
+    "dataType": 0,
+    "channelSettingType": 0
+  },
+  {
+    "signalId": 25,
+    "description": "interor-temp-signal-value",
+    "type": 0,
+    "channelType": 5,
+    "dataItemFormatType": 22,
+    "dataType": 0,
+    "channelSettingType": 0
+  },
+  {
+    "signalId": 26,
+    "description": "exterior-temp-signal-value",
+    "type": 0,
+    "channelType": 5,
+    "dataItemFormatType": 22,
+    "dataType": 0,
+    "channelSettingType": 0
+  },
+  {
+    "signalId": 27,
+    "description": "starter-battery-voltage-signal",
+    "type": 0,
+    "channelType": 5,
+    "dataItemFormatType": 27,
+    "dataType": 2,
+    "channelSettingType": 0
+  },
+  {
+    "signalId": 28,
+    "description": "multiplus-off",
+    "type": 0,
+    "channelType": 1,
+    "dataItemFormatType": 0,
+    "dataType": 0,
+    "channelSettingType": 0
+  },
+  {
+    "signalId": 29,
+    "description": "multiplus-on",
+    "type": 0,
+    "channelType": 1,
+    "dataItemFormatType": 0,
+    "dataType": 0,
+    "channelSettingType": 0
+  },
+  {
+    "signalId": 30,
+    "description": "multiplus-charger-only",
+    "type": 0,
+    "channelType": 1,
+    "dataItemFormatType": 0,
+    "dataType": 0,
+    "channelSettingType": 0
+  },
+  {
+    "signalId": 31,
+    "description": "increase-ac-limit",
+    "type": 0,
+    "channelType": 1,
+    "dataItemFormatType": 0,
+    "dataType": 0,
+    "channelSettingType": 0
+  },
+  {
+    "signalId": 32,
+    "description": "decrease-ac-limit",
+    "type": 0,
+    "channelType": 1,
+    "dataItemFormatType": 0,
+    "dataType": 0,
+    "channelSettingType": 0
+  },
+  {
+    "signalId": 33,
+    "description": "requested-ac-limit",
+    "type": 0,
+    "channelType": 5,
+    "dataItemFormatType": 0,
+    "dataType": 4,
+    "channelSettingType": 0
+  },
+  {
+    "signalId": 34,
+    "description": "load-ac-limit",
+    "type": 0,
+    "channelType": 1,
+    "dataItemFormatType": 0,
+    "dataType": 0,
+    "channelSettingType": 0
+  },
+  {
+    "signalId": 35,
+    "description": "current-ac-limit",
+    "type": 0,
+    "channelType": 5,
+    "dataItemFormatType": 6,
+    "dataType": 4,
+    "channelSettingType": 0
+  },
+  {
+    "signalId": 36,
+    "description": "ac-limit-5",
+    "type": 0,
+    "channelType": 1,
+    "dataItemFormatType": 0,
+    "dataType": 0,
+    "channelSettingType": 0
+  },
+  {
+    "signalId": 37,
+    "description": "ac-limit-10",
+    "type": 0,
+    "channelType": 1,
+    "dataItemFormatType": 0,
+    "dataType": 0,
+    "channelSettingType": 0
+  },
+  {
+    "signalId": 38,
+    "description": "ac-limit-15",
+    "type": 0,
+    "channelType": 1,
+    "dataItemFormatType": 0,
+    "dataType": 0,
+    "channelSettingType": 0
+  },
+  {
+    "signalId": 39,
+    "description": "ac-limit-20",
+    "type": 0,
+    "channelType": 1,
+    "dataItemFormatType": 0,
+    "dataType": 0,
+    "channelSettingType": 0
+  },
+  {
+    "signalId": 40,
+    "description": "ac-limit-30",
+    "type": 0,
+    "channelType": 1,
+    "dataItemFormatType": 0,
+    "dataType": 0,
+    "channelSettingType": 0
+  },
+  {
+    "signalId": 41,
+    "description": "ac-limit-50",
+    "type": 0,
+    "channelType": 1,
+    "dataItemFormatType": 0,
+    "dataType": 0,
+    "channelSettingType": 0
+  },
+  {
+    "signalId": 42,
+    "description": "bms-battery-voltage",
+    "type": 0,
+    "channelType": 5,
+    "dataItemFormatType": 27,
+    "dataType": 2,
+    "channelSettingType": 0
+  },
+  {
+    "signalId": 43,
+    "description": "dc-loads",
+    "type": 0,
+    "channelType": 5,
+    "dataItemFormatType": 6,
+    "dataType": 3,
+    "channelSettingType": 0
+  },
+  {
+    "signalId": 44,
+    "description": "bms-battery-amperage",
+    "type": 0,
+    "channelType": 5,
+    "dataItemFormatType": 6,
+    "dataType": 1,
+    "channelSettingType": 0
+  },
+  {
+    "signalId": 45,
+    "description": "bms-state-of-charge",
+    "type": 0,
+    "channelType": 5,
+    "dataItemFormatType": 14,
+    "dataType": 2,
+    "channelSettingType": 0
+  },
+  {
+    "signalId": 46,
+    "description": "bms-time-to-go",
+    "type": 0,
+    "channelType": 5,
+    "dataItemFormatType": 23,
+    "dataType": 2,
+    "channelSettingType": 0
+  },
+  {
+    "signalId": 47,
+    "description": "leg-one-ac-in-amperage",
+    "type": 0,
+    "channelType": 5,
+    "dataItemFormatType": 6,
+    "dataType": 3,
+    "channelSettingType": 0
+  },
+  {
+    "signalId": 48,
+    "description": "leg-one-ac-in-voltage",
+    "type": 0,
+    "channelType": 5,
+    "dataItemFormatType": 27,
+    "dataType": 2,
+    "channelSettingType": 0
+  },
+  {
+    "signalId": 49,
+    "description": "primary-solar-voltage",
+    "type": 0,
+    "channelType": 5,
+    "dataItemFormatType": 27,
+    "dataType": 2,
+    "channelSettingType": 0
+  },
+  {
+    "signalId": 50,
+    "description": "leg-one-ac-out-voltage",
+    "type": 0,
+    "channelType": 5,
+    "dataItemFormatType": 27,
+    "dataType": 2,
+    "channelSettingType": 0
+  },
+  {
+    "signalId": 51,
+    "description": "leg-one-ac-out-amperage",
+    "type": 0,
+    "channelType": 5,
+    "dataItemFormatType": 6,
+    "dataType": 3,
+    "channelSettingType": 0
+  },
+  {
+    "signalId": 52,
+    "description": "solar-indicator",
+    "type": 0,
+    "channelType": 0,
+    "dataItemFormatType": 0,
+    "dataType": 0,
+    "channelSettingType": 0
+  },
+  {
+    "signalId": 53,
+    "description": "primary-solar-amperage",
+    "type": 0,
+    "channelType": 5,
+    "dataItemFormatType": 6,
+    "dataType": 3,
+    "channelSettingType": 0
+  },
+  {
+    "signalId": 54,
+    "description": "aux-solar-voltage",
+    "type": 0,
+    "channelType": 5,
+    "dataItemFormatType": 27,
+    "dataType": 2,
+    "channelSettingType": 0
+  },
+  {
+    "signalId": 55,
+    "description": "aux-solar-amperage",
+    "type": 0,
+    "channelType": 5,
+    "dataItemFormatType": 6,
+    "dataType": 3,
+    "channelSettingType": 0
+  },
+  {
+    "signalId": 56,
+    "description": "shore-power-indicator",
+    "type": 0,
+    "channelType": 0,
+    "dataItemFormatType": 0,
+    "dataType": 4,
+    "channelSettingType": 0
+  },
+  {
+    "signalId": 59,
+    "description": "set-temp-value-f",
+    "type": 0,
+    "channelType": 5,
+    "dataItemFormatType": 0,
+    "dataType": 2,
+    "channelSettingType": 0
+  },
+  {
+    "signalId": 60,
+    "description": "set-temp-value-f",
+    "type": 0,
+    "channelType": 5,
+    "dataItemFormatType": 0,
+    "dataType": 2,
+    "channelSettingType": 0
+  },
+  {
+    "signalId": 61,
+    "description": "vent-fan-1-on-off",
+    "type": 0,
+    "channelType": 1,
+    "dataItemFormatType": 0,
+    "dataType": 0,
+    "channelSettingType": 0
+  },
+  {
+    "signalId": 62,
+    "description": "vent-fan-1-intake",
+    "type": 0,
+    "channelType": 1,
+    "dataItemFormatType": 0,
+    "dataType": 0,
+    "channelSettingType": 0
+  },
+  {
+    "signalId": 63,
+    "description": "vent-fan-1-exhaust",
+    "type": 0,
+    "channelType": 1,
+    "dataItemFormatType": 0,
+    "dataType": 0,
+    "channelSettingType": 0
+  },
+  {
+    "signalId": 64,
+    "description": "vent-fan-1-increase-speed",
+    "type": 0,
+    "channelType": 1,
+    "dataItemFormatType": 0,
+    "dataType": 0,
+    "channelSettingType": 0
+  },
+  {
+    "signalId": 65,
+    "description": "vent-fan-1-decrease-speed",
+    "type": 0,
+    "channelType": 1,
+    "dataItemFormatType": 0,
+    "dataType": 0,
+    "channelSettingType": 0
+  },
+  {
+    "signalId": 66,
+    "description": "vent-fan-1-speed-value",
+    "type": 0,
+    "channelType": 5,
+    "dataItemFormatType": 14,
+    "dataType": 4,
+    "channelSettingType": 0
+  },
+  {
+    "signalId": 67,
+    "description": "vent-fan-2-on-off",
+    "type": 0,
+    "channelType": 1,
+    "dataItemFormatType": 0,
+    "dataType": 0,
+    "channelSettingType": 0
+  },
+  {
+    "signalId": 68,
+    "description": "vent-fan-2-intake",
+    "type": 0,
+    "channelType": 1,
+    "dataItemFormatType": 0,
+    "dataType": 0,
+    "channelSettingType": 0
+  },
+  {
+    "signalId": 69,
+    "description": "vent-fan-2-exhaust",
+    "type": 0,
+    "channelType": 1,
+    "dataItemFormatType": 0,
+    "dataType": 0,
+    "channelSettingType": 0
+  },
+  {
+    "signalId": 70,
+    "description": "vent-fan-2-increase-speed",
+    "type": 0,
+    "channelType": 1,
+    "dataItemFormatType": 0,
+    "dataType": 0,
+    "channelSettingType": 0
+  },
+  {
+    "signalId": 71,
+    "description": "vent-fan-2-decrease-speed",
+    "type": 0,
+    "channelType": 1,
+    "dataItemFormatType": 0,
+    "dataType": 0,
+    "channelSettingType": 0
+  },
+  {
+    "signalId": 72,
+    "description": "vent-fan-2-speed-value",
+    "type": 0,
+    "channelType": 5,
+    "dataItemFormatType": 14,
+    "dataType": 4,
+    "channelSettingType": 0
+  },
+  {
+    "signalId": 73,
+    "description": "rixens-increase-fan-speed",
+    "type": 0,
+    "channelType": 1,
+    "dataItemFormatType": 0,
+    "dataType": 0,
+    "channelSettingType": 0
+  },
+  {
+    "signalId": 74,
+    "description": "rixens-decrease-fan-speed",
+    "type": 0,
+    "channelType": 1,
+    "dataItemFormatType": 0,
+    "dataType": 0,
+    "channelSettingType": 0
+  },
+  {
+    "signalId": 75,
+    "description": "rixens-fan-speed",
+    "type": 0,
+    "channelType": 5,
+    "dataItemFormatType": 14,
+    "dataType": 4,
+    "channelSettingType": 0
+  },
+  {
+    "signalId": 76,
+    "description": "rixens-furnace on",
+    "type": 0,
+    "channelType": 1,
+    "dataItemFormatType": 0,
+    "dataType": 0,
+    "channelSettingType": 0
+  },
+  {
+    "signalId": 77,
+    "description": "rixens-electric-on",
+    "type": 0,
+    "channelType": 1,
+    "dataItemFormatType": 0,
+    "dataType": 0,
+    "channelSettingType": 0
+  },
+  {
+    "signalId": 78,
+    "description": "rixens-engine-on",
+    "type": 0,
+    "channelType": 1,
+    "dataItemFormatType": 0,
+    "dataType": 0,
+    "channelSettingType": 0
+  },
+  {
+    "signalId": 79,
+    "description": "rixens-floor-on-off",
+    "type": 0,
+    "channelType": 1,
+    "dataItemFormatType": 0,
+    "dataType": 0,
+    "channelSettingType": 0
+  },
+  {
+    "signalId": 80,
+    "description": "rixens-hot-water-on-off",
+    "type": 0,
+    "channelType": 1,
+    "dataItemFormatType": 0,
+    "dataType": 0,
+    "channelSettingType": 0
+  },
+  {
+    "signalId": 81,
+    "description": "rixens-aux-on-off",
+    "type": 0,
+    "channelType": 1,
+    "dataItemFormatType": 0,
+    "dataType": 0,
+    "channelSettingType": 0
+  },
+  {
+    "signalId": 82,
+    "description": "rixens-fan-on-off",
+    "type": 0,
+    "channelType": 1,
+    "dataItemFormatType": 0,
+    "dataType": 0,
+    "channelSettingType": 0
+  },
+  {
+    "signalId": 57,
+    "description": "increase-set-temp",
+    "type": 0,
+    "channelType": 3,
+    "dataItemFormatType": 0,
+    "dataType": 0,
+    "channelSettingType": 2
+  },
+  {
+    "signalId": 88,
+    "description": "call-for-heat-indicator",
+    "type": 0,
+    "channelType": 1,
+    "dataItemFormatType": 0,
+    "dataType": 0,
+    "channelSettingType": 0
+  },
+  {
+    "signalId": 95,
+    "description": "Recpro: AC On/Off",
+    "type": 0,
+    "channelType": 1,
+    "dataItemFormatType": 0,
+    "dataType": 0,
+    "channelSettingType": 0
+  },
+  {
+    "signalId": 96,
+    "description": "RecPro: Fan Low",
+    "type": 0,
+    "channelType": 1,
+    "dataItemFormatType": 0,
+    "dataType": 0,
+    "channelSettingType": 0
+  },
+  {
+    "signalId": 97,
+    "description": "RecPro: Fan High",
+    "type": 0,
+    "channelType": 1,
+    "dataItemFormatType": 0,
+    "dataType": 0,
+    "channelSettingType": 0
+  },
+  {
+    "signalId": 98,
+    "description": "Recpro: Fan Only",
+    "type": 0,
+    "channelType": 1,
+    "dataItemFormatType": 0,
+    "dataType": 0,
+    "channelSettingType": 0
+  },
+  {
+    "signalId": 99,
+    "description": "Heat Pump On/Off",
+    "type": 0,
+    "channelType": 1,
+    "dataItemFormatType": 0,
+    "dataType": 0,
+    "channelSettingType": 0
+  },
+  {
+    "signalId": 100,
+    "description": "RecPro: Fan Med",
+    "type": 0,
+    "channelType": 1,
+    "dataItemFormatType": 0,
+    "dataType": 0,
+    "channelSettingType": 0
+  },
+  {
+    "signalId": 101,
+    "description": "state",
+    "type": 0,
+    "channelType": 5,
+    "dataItemFormatType": 0,
+    "dataType": 4,
+    "channelSettingType": 0
+  },
+  {
+    "signalId": 102,
+    "description": "state 2",
+    "type": 0,
+    "channelType": 5,
+    "dataItemFormatType": 0,
+    "dataType": 4,
+    "channelSettingType": 0
+  },
+  {
+    "signalId": 84,
+    "description": "tank-1-signal-value",
+    "type": 0,
+    "channelType": 5,
+    "dataItemFormatType": 14,
+    "dataType": 4,
+    "channelSettingType": 0
+  },
+  {
+    "signalId": 85,
+    "description": "tank-2-signal-value",
+    "type": 0,
+    "channelType": 5,
+    "dataItemFormatType": 14,
+    "dataType": 4,
+    "channelSettingType": 0
+  },
+  {
+    "signalId": 86,
+    "description": "tank-3-signal-value",
+    "type": 0,
+    "channelType": 5,
+    "dataItemFormatType": 14,
+    "dataType": 4,
+    "channelSettingType": 0
+  },
+  {
+    "signalId": 87,
+    "description": "tank-4-signal-value",
+    "type": 0,
+    "channelType": 5,
+    "dataItemFormatType": 14,
+    "dataType": 4,
+    "channelSettingType": 0
+  }
+]

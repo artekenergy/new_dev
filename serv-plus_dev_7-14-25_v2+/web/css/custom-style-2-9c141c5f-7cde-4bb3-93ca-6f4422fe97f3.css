@@ -1,0 +1,44 @@
+#pc-b0046241-626d-11f0-9f62-793109aaf8f1 {
+    width: 100vw;
+    height: 56.249999999999999999999999999vw;
+    margin-left: 0;
+}
+
+#comp-b95ea3f4-626d-11f0-9f62-793109aaf8f1 {
+    width: 15.625000%;
+    height: 5.5555555555555555555555555556%;
+    left: 36.328125%;
+    top: 27.916666666666666666666666667%;
+    transform: rotate(0deg) translateZ(0px);
+    z-index: 0;
+}
+
+#comp-b95ea3f4-626d-11f0-9f62-793109aaf8f1 {
+    font-size: 2.343750vw;
+    color: #ffffff;
+}
+
+#comp-e175b3bb-626d-11f0-9f62-793109aaf8f1 {
+    width: 7.812500%;
+    height: 13.853904282115861111111111111%;
+    left: 33.593750%;
+    top: 4.4444444444444444444444444445%;
+    transform: rotate(0deg) translateZ(0px);
+    z-index: 1;
+}
+
+
+
+@media (min-width: 177.77777777777777777777777778vh) {
+ #pc-b0046241-626d-11f0-9f62-793109aaf8f1 {
+    width: 177.77777777777777777777777778vh;
+    height: 100vh;
+    margin-top: 0;
+}
+
+#comp-b95ea3f4-626d-11f0-9f62-793109aaf8f1 {
+    font-size: 4.1666666666666666666666666667vh;
+}
+
+}
+

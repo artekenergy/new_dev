@@ -1,0 +1,84 @@
+﻿
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<script src="logger.js"></script>
+		<script id="application-settings" type="application/json">{"index":2,"type":0}</script>
+		<script id="mfd-channel-subscription" type="application/json">{"messagetype":96,"messagecmd":0,"size":6,"data":[2,0,59,0,88,0]}</script>
+		<script id="n2k-dataItem-subscription" type="application/json">{"messagetype":96,"messagecmd":1,"size":2,"data":[0,0]}</script>
+		<link rel="stylesheet" href="css/custom-style-2-9c141c5f-7cde-4bb3-93ca-6f4422fe97f3.css">
+		<link rel="manifest" href="manifest2.json">
+	</head>
+	<body ondragstart="return!1" ondrop="return!1" style="background-color:#000">
+		<div class="test-warning-message hidden" id="test-warning-message">For testing purposes only.</div>
+		<div class="checksum-warning-message" id="checksum-warning-message">Warning! Version mismatch between graphical interface and system configuration.</div>
+		<div id="overlay-white-page-blocker" style="position:fixed;background-color:#000;width:100%;height:100%"></div>
+		<div class="overlay overlay-start">
+			<div class="animated-loader-outer">
+				<div class="animated-loader"></div>
+			</div>
+			<div class="checksum-warning hidden">Warning! Version mismatch between graphical interface and system configuration.
+			</div>
+		</div>
+		<div class="overlay overlay-bus-error hidden">
+			<div class="animated-loader-outer">
+				<div class="animated-loader"></div>
+			</div>
+			<div class="overlay-text">No connection to digital switching.</div>
+		</div>
+		<div class="overlay overlay-websocket-error hidden">
+			<div class="animated-loader-outer">
+				<div class="animated-loader"></div>
+			</div>
+			<div class="overlay-text">No connection to web server.</div>
+		</div>
+		<div class="overlay overlay-reload hidden">
+			<div class="animated-loader-outer">
+				<div class="animated-loader"></div>
+			</div>
+			<div class="overlay-text">Please wait while the application is being restarted.</div>
+		</div>
+		<div class="app-selector-link-timer-dialog hidden">
+			<div>
+				<button class="app-selector-link-timer-dialog-button app-selector-link-timer-dialog-button-navigate">Navigate</button>
+				<button class="app-selector-link-timer-dialog-button app-selector-link-timer-dialog-button-cancel">Cancel</button>
+			</div>
+		</div>
+		<div class="external-page">
+			<div class="external-page-navigation">
+				<button class="external-page-navigation-back">Back</button>
+			</div>
+			<div class="external-page-status">
+				<div class="external-page-status-text"></div>
+			</div>
+			<iframe class="external-page-iframe" style="height:100%;width:98%"></iframe>
+		</div>
+		<div class="app-selector-link-timer">
+			<svg class="viewbox" viewBox="0 0 200 200">
+				<circle class="app-selector-link-timer-progress-bar" cx="100" cy="100" r="47" transform="rotate(-90 100 100)" pointer-events="all" stroke="#888" stroke-width="24" fill="none"></circle>
+			</svg>
+		</div>
+		<script src="index.1c0f6c84f77d0be1303b.js"></script>
+		<div id="pc-b0046241-626d-11f0-9f62-793109aaf8f1" class="page-collection" data-page-collection-id="0" data-aspect-ratio="1.7777777777777777777777777778" data-screen-saver-page-id="">
+			<div class="page hidden" id="p-b0046242-626d-11f0-9f62-793109aaf8f1">
+				<div class="layer" id="l-b0046244-626d-11f0-9f62-793109aaf8f1" data-show-initially="true">
+					<div id="comp-b95ea3f4-626d-11f0-9f62-793109aaf8f1" data-hide-on-service-unavailable="false" data-ebp-signal-id="59" class="component signalvalue" style="font-family:DejaVu Sans" data-signal-type="5" data-off-value="" data-show-unit="False" data-format-mode="decimals" data-format-setting="3" data-decimal-places="0" data-not-available-value="zero" data-magnitude-conversion="1">
+						<div class="signalvalue-inner text-halign-left text-valign-top">
+							<div class="value"></div>
+							<div class="unit"></div>
+						</div>
+					</div>
+					<div id="comp-e175b3bb-626d-11f0-9f62-793109aaf8f1" data-hide-on-service-unavailable="false" data-ebp-signal-id="88" class="component indicator" data-stack-images="false">
+						<img class="indicator-off" src="images/3e4ab4ab-4003-4dbf-bd54-01910959f693-0.png" id="e175b3bb-626d-11f0-9f62-793109aaf8f1-imageoff">
+						<img class="indicator-on" src="images/37d7bfae-d863-42de-b9ab-0191095b7f03-0.png" id="e175b3bb-626d-11f0-9f62-793109aaf8f1-imageon">
+						<img class="indicator-error1" id="e175b3bb-626d-11f0-9f62-793109aaf8f1-imageerror1">
+						<img class="indicator-error2" id="e175b3bb-626d-11f0-9f62-793109aaf8f1-imageerror2">
+						<img class="indicator-error12" id="e175b3bb-626d-11f0-9f62-793109aaf8f1-imageerror12">
+						<img class="indicator-notavailable" id="e175b3bb-626d-11f0-9f62-793109aaf8f1-imagenotavailable">
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

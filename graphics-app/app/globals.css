@@ -1,0 +1,20 @@
+@font-face {
+  font-family: "Cy-ExtraBold";
+  src: url("/fonts/Cy-ExtraBold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  --accent-color: #ffaa3b;
+  --bg-color: #193646;
+  --text-color: #e5e0e6;
+}
+
+body {
+  background-color: var(--bg-color);
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  color: var(--text-color);
+}

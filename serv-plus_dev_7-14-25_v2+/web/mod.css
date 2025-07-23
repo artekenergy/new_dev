@@ -1,0 +1,2415 @@
+/* ==========================================================================
+   Fonts & Global Variables
+   ========================================================================== */
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("fonts/Montserrat-Light.woff2") format("woff2"),
+       url("fonts/Montserrat-Light.woff") format("woff"),
+       url("fonts/Montserrat-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("fonts/Montserrat-Regular.woff2") format("woff2"),
+       url("fonts/Montserrat-Regular.woff") format("woff"),
+       url("fonts/Montserrat-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("fonts/Montserrat-Medium.woff2") format("woff2"),
+       url("fonts/Montserrat-Medium.woff") format("woff"),
+       url("fonts/Montserrat-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("fonts/Montserrat-SemiBold.woff2") format("woff2"),
+       url("fonts/Montserrat-SemiBold.woff") format("woff"),
+       url("fonts/Montserrat-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("fonts/Montserrat-Bold.woff2") format("woff2"),
+       url("fonts/Montserrat-Bold.woff") format("woff"),
+       url("fonts/Montserrat-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("fonts/Montserrat-ExtraBold.woff2") format("woff2"),
+       url("fonts/Montserrat-ExtraBold.woff") format("woff"),
+       url("fonts/Montserrat-ExtraBold.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("fonts/OpenSans-Light.woff2") format("woff2"),
+       url("fonts/OpenSans-Light.woff") format("woff"),
+       url("fonts/OpenSans-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("fonts/OpenSans-Regular.woff2") format("woff2"),
+       url("fonts/OpenSans-Regular.woff") format("woff"),
+       url("fonts/OpenSans-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("fonts/OpenSans-Medium.woff2") format("woff2"),
+       url("fonts/OpenSans-Medium.woff") format("woff"),
+       url("fonts/OpenSans-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("fonts/OpenSans-SemiBold.woff2") format("woff2"),
+       url("fonts/OpenSans-SemiBold.woff") format("woff"),
+       url("fonts/OpenSans-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("fonts/OpenSans-Bold.woff2") format("woff2"),
+       url("fonts/OpenSans-Bold.woff") format("woff"),
+       url("fonts/OpenSans-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Cy-ExtraBold";
+  src: url("fonts/Cy-ExtraBold.woff2") format("woff2"),
+    url("fonts/Cy-ExtraBold.woff") format("woff"),
+    url("fonts/Cy-ExtraBold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  --accent-color: #ffaa3b;
+}
+
+/* ==========================================================================
+       Base Styles & Typography
+       ========================================================================== */
+
+/* Reset / Base Body */
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+body {
+  background-color: #193646;
+  font-family: "Open Sans", "Segoe UI", Arial, sans-serif;
+  color: 121212;
+  overflow: hidden;
+}
+
+/* Main Content Area - Optimized for 490px display height */
+main {
+  height: calc(100vh - 215px); /* Total viewport - (body margins + header + navigation) */
+  min-height: 270px; /* Minimum height for 490px displays */
+  max-height: calc(100vh - 180px); /* Maximum height with some padding */
+  overflow: hidden;
+}
+
+/* Specific optimization for small displays (490px height) */
+@media (max-height: 520px) {
+  main {
+    height: calc(100vh - 190px);
+    min-height: 260px;
+     overflow: hidden;
+  }
+
+}
+
+.tab-content {
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+#power-control-group {
+  margin-bottom: 0px;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Montserrat", "Segoe UI", Arial, sans-serif;
+}
+
+h2 {
+  margin-top: 0;
+  margin-bottom: 4px;
+  padding-bottom: 2px;
+  color: #e5e0e6;
+  font-weight: 500;
+}
+
+/* Form & inline text */
+label {
+  font-family: "Open Sans", "Segoe UI", Arial, sans-serif;
+  font-weight: 500;
+  margin-right: 5px;
+}
+
+span {
+  color: #e5e0e6;
+  font-weight: 500;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+/* Header shared font for header and span */
+span,
+.header {
+  font-family: "Montserrat", "Segoe UI", Arial, sans-serif;
+}
+
+/* ==========================================================================
+       Layout & Structure
+       ========================================================================== */
+
+/* Header */
+.header {
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 30px 5px 30px;
+  border-bottom: 2px solid #e5e0e6;
+}
+
+/* Home Page Layout */
+.home-page {
+  display: flex;
+  flex-wrap: wrap; /* This centers items vertically */
+  justify-content: space-between;
+  margin-top: 40px;
+}
+.status-messages,
+.logo-container {
+  flex: 1 1 50%;
+  box-sizing: border-box;
+  padding: 0 10px; /* side padding for spacing */
+}
+.status-messages {
+  flex: 0 0 40%;
+  box-sizing: border-box;
+  padding-right: 10px;
+}
+.logo-container {
+  flex: 0 0 60%;
+  box-sizing: border-box;
+  padding-left: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.logo {
+  width: 85%;
+  height: auto;
+  object-fit: contain; /* Ensures the entire image is visible */
+}
+
+/* Temperature Display */
+.temps {
+  display: flex;
+  margin: 0 10px;
+}
+.temps > *:not(:last-child) {
+  margin-right: 20px;
+}
+.temp-value,
+.time-value {
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  padding-right: 10px;
+}
+
+/* ==========================================================================
+       Form Elements
+       ========================================================================== */
+
+input[type="text"] {
+  padding: 10px;
+  border: 1px solid #e5e0e6;
+  border-radius: 4px;
+  margin: 0 10px 10px 0;
+}
+
+/* ==========================================================================
+       Components & Utility Classes
+       ========================================================================== */
+
+/* Control Groups & Connection Status */
+.control-group {
+  border: none;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  position: relative; /* For positioning settings button if needed */
+}
+
+.connection-status {
+  padding: 12px;
+  margin-bottom: 20px;
+  border-radius: 6px;
+  font-weight: 500;
+  text-align: center;
+}
+.connected {
+  background-color: #dff0d8;
+  color: #3c763d;
+}
+.disconnected {
+  background-color: #f2dede;
+  color: #a94442;
+}
+
+/* Status messages */
+/* (Child spacing is already applied below) */
+.status-messages-list,
+.status-messages-list-values {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.status-messages-items {
+  display: flex;
+  flex-direction: row;
+  margin: 0 50px 0 20px;
+}
+.status-messages-items > *:not(:last-child) {
+  margin-right: 10px;
+}
+
+/* Log Component */
+.log {
+  height: 200px;
+  overflow-y: auto;
+  padding: 15px;
+  margin-top: 20px;
+  font-family: "Open Sans", "Consolas", monospace;
+  background-color: #193646;
+  color: #e5e0e6;
+  border-radius: 6px;
+  line-height: 1.5;
+}
+
+#multiplus-button-grid {
+  margin-top: 5px;
+}
+
+/* Battery Overlay */
+.battery-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* Set fixed width instead of percentage width */
+  width: 275px;
+  /* Fixed height to maintain consistent sizing */
+  height: 165px;
+  margin-bottom: 5px;
+}
+
+.battery-image {
+  display: block;
+  /* Set fixed size instead of percentage-based */
+  width: 225px;
+  height: 225px;
+  margin: 0 auto;
+  object-fit: contain;
+}
+
+.battery-text-overlay {
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 150px; /* Fixed width */
+  text-align: center;
+}
+
+.battery-text-overlay h2 {
+  margin-bottom: 10px;
+  margin-top: 0;
+  /* Keep font size consistent */
+  font-size: 50px;
+}
+
+.battery-details {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  font-size: 20px;
+  margin-bottom: 25px;
+}
+
+.battery-signal {
+  /* Fixed font size for battery details */
+  font-size: 20px;
+}
+#splash-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1);
+  transition: opacity 1.5s ease, transform 1.2s ease-out;
+  pointer-events: auto;
+}
+
+/* When the overlay is hidden, its opacity drops to 0 */
+#splash-overlay.hidden {
+  opacity: 0;
+  transform: scale(1.05);
+  pointer-events: none;
+}
+
+/* ==========================================================================
+       Sliders & Range Inputs
+       ========================================================================== */
+
+/* Common Slider Base */
+.slider,
+.warmth-slider,
+.temp-slider,
+.color-slider {
+  -webkit-appearance: none !important;
+  appearance: none !important;
+  background: #e5e0e6;
+  border-radius: 5px;
+  outline: none;
+  margin: 15px 15px;
+  width: 100%;
+  max-width: 250px;
+  min-width: 150px;
+  position: relative;
+  touch-action: none;
+  will-change: transform;
+  height: 15px;
+}
+
+#ac-limit-btn {
+  margin-bottom: 0px;
+}
+
+/* Slider Track (Webkit) */
+.slider::-webkit-slider-runnable-track,
+.warmth-slider::-webkit-slider-runnable-track {
+  height: 15px;
+  border-radius: 5px;
+  background: #e5e0e6;
+  border: 5px;
+}
+
+/* Slider Thumb (Webkit) */
+.slider::-webkit-slider-thumb,
+.warmth-slider::-webkit-slider-thumb {
+  -webkit-appearance: none !important;
+  appearance: none !important;
+  width: 40px;
+  height: 40px;
+  background: linear-gradient(135deg, #4c6a9c, #193646);
+  border: 2px solid #e5e0e6;
+  border-radius: 50% !important;
+  margin-top: -10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3), 0 0 0 2px rgba(229, 224, 230, 0.3);
+  position: relative;
+  z-index: 2;
+  cursor: pointer;
+}
+
+/* Older Browser & Firefox Thumb Styles */
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 35px;
+  height: 35px;
+  background: #193646;
+  border: none;
+  border-radius: 50%;
+}
+input[type="range"]::-moz-range-thumb {
+  width: 28px;
+  height: 28px;
+  background: linear-gradient(135deg, #4c6a9c, #193646);
+  border: 2px solid #e5e0e6;
+  border-radius: 50%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3), 0 0 0 2px rgba(229, 224, 230, 0.3);
+  cursor: pointer;
+}
+input[type="range"]::-ms-thumb {
+  width: 24px;
+  height: 24px;
+  background: #193646;
+  border: none;
+  border-radius: 50%;
+}
+
+/* Color Slider – Dynamic Background & Thumb overrides */
+.color-slider {
+  -webkit-appearance: none;
+  appearance: none;
+  background: transparent; /* Remove the base background */
+  cursor: pointer;
+}
+/* For WebKit browsers: style the track */
+.color-slider::-webkit-slider-runnable-track {
+  height: 15px;
+  background: linear-gradient(
+    to right,
+    #ff0000 0%,
+    #ffff00 17%,
+    #00ff00 33%,
+    #00ffff 50%,
+    #0000ff 67%,
+    #ff00ff 83%,
+    #ff0000 100%
+  );
+  border: none;
+  border-radius: 5px;
+}
+/* For Firefox: style the track */
+.color-slider::-moz-range-track {
+  height: 10px;
+  background: linear-gradient(
+    to right,
+    #ff0000 0%,
+    #ffff00 17%,
+    #00ff00 33%,
+    #00ffff 50%,
+    #0000ff 67%,
+    #ff00ff 83%,
+    #ff0000 100%
+  );
+  border: none;
+  border-radius: 5px;
+}
+/* Thumb Styling for Color Slider */
+.color-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 40px;
+  height: 40px;
+  background: linear-gradient(135deg, #4c6a9c, #193646);
+  border: 2px solid #e5e0e6;
+  border-radius: 50%;
+  margin-top: -10px;
+  cursor: pointer;
+}
+.color-slider::-moz-range-thumb {
+  width: 40px;
+  height: 40px;
+  background: linear-gradient(135deg, #4c6a9c, #193646);
+  border: 2px solid #e5e0e6;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/* Slider Containers & Value Display */
+.slider-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 60px;
+  min-width: 150px;
+  width: 100%;
+  position: relative;
+  overflow: visible;
+}
+.slider-value {
+  min-width: 40px;
+  text-align: left;
+  padding-left: 8px;
+  color: #e5e0e6;
+  font-size: 14px;
+}
+
+/* Warmth Slider – Blue to Orange Gradient */
+.warmth-slider {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 15px;
+  width: 100%;
+  max-width: 250px;
+  background: transparent;
+  cursor: pointer;
+}
+.warmth-slider::-webkit-slider-runnable-track {
+  height: 15px;
+  background: linear-gradient(to right, #0000ff 0%, #ffa500 100%);
+  border: none;
+  border-radius: 5px;
+}
+.warmth-slider::-moz-range-track {
+  height: 32px;
+  background: linear-gradient(to right, #0000ff 0%, #ffa500 100%);
+  border: none;
+  border-radius: 5px;
+}
+.warmth-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 40px;
+  height: 40px;
+  background: linear-gradient(135deg, #4c6a9c, #193646);
+  border: 2px solid #e5e0e6;
+  border-radius: 50%;
+  margin-top: -10px;
+  cursor: pointer;
+}
+.warmth-slider::-moz-range-thumb {
+  width: 40px;
+  height: 40px;
+  background: linear-gradient(135deg, #4c6a9c, #193646);
+  border: 2px solid #e5e0e6;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/* ==========================================================================
+       Interactive Elements & Buttons
+       ========================================================================== */
+
+/* Common Reset for Buttons and Toggle Elements */
+button,
+.tab-button,
+.toggle-btn,
+.momentary-btn,
+.round-btn,
+input[type="range"] {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  user-select: none;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+/* Regular Button */
+button {
+  background-color: #193646;
+  color: e5e0e6;
+  padding: 10px 15px;
+  margin: 5px;
+  border-radius: 4px;
+  font-weight: 500;
+}
+
+/* Toggle / Momentary Buttons (Non-Round) */
+.toggle-btn:not(.round-btn):not(.pill-btn),
+.momentary-btn:not(.round-btn):not(.pill-btn) {
+  background-color: #193646;
+  color: #e0e0e0;
+  padding: 12px 24px;
+  border-radius: 6px;
+  font-weight: 500;
+}
+.toggle-btn:not(.round-btn):not(.pill-btn):hover,
+.momentary-btn:not(.round-btn):not(.pill-btn):hover {
+  background-color: #193646;
+}
+.toggle-btn:not(.round-btn):not(.pill-btn).active,
+.momentary-btn:not(.round-btn):not(.pill-btn).active {
+  background-color: #e5e0e6;
+  color: #193646;
+}
+
+/* Round Button & Icon Toggling */
+.round-btn {
+  width: 64px; /* Reduced from 80px */
+  height: 64px; /* Reduced from 80px */
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 12px;
+  background-color: #193646;
+  position: relative;
+  overflow: hidden;
+  border: 2px solid #e5e0e6;
+}
+.round-btn img.icon {
+  width: 32px; /* Reduced from 40px to fit smaller button */
+  height: 32px; /* Reduced from 40px to fit smaller button */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: transform 0.2s ease;
+}
+.round-btn.active {
+  background-color: #e5e0e6;
+  color: #193646;
+  animation: gentle-pulse 2s infinite;
+}
+.round-btn .icon.active,
+.round-btn .icon.inactive {
+  display: none;
+}
+.round-btn .icon.inactive {
+  display: block !important;
+}
+.round-btn.active .icon.active {
+  display: block !important;
+}
+.round-btn.active .icon.inactive {
+  display: none !important;
+}
+
+/* Button Grid Layout */
+.button-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px 0;
+  margin-right: -20px;
+  margin-bottom: -20px;
+}
+.button-grid > * {
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+/* Additional Button Icon & State Tweaks */
+button:hover,
+.round-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: none;
+}
+button:active,
+button.active,
+.round-btn:active,
+.round-btn.active {
+  transform: scale(0.96);
+  box-shadow: none;
+}
+
+/* Pressed state styles for momentary button feedback */
+.btn-round--pressed,
+.round-btn.btn-round--pressed {
+  transform: scale(0.96);
+  box-shadow: none;
+  background-color: #e5e0e6;
+}
+
+.btn-round--pressed .icon.active,
+.round-btn.btn-round--pressed .icon.active {
+  display: block !important;
+}
+
+.btn-round--pressed .icon.inactive,
+.round-btn.btn-round--pressed .icon.inactive {
+  display: none !important;
+}
+
+/* Pressed state for pill buttons */
+.pressed,
+.pill-btn.pressed {
+  transform: scale(0.96);
+  box-shadow: none;
+  background-color: #e5e0e6;
+  color: #121212;
+}
+
+.pressed .pill-btn-text,
+.pill-btn.pressed .pill-btn-text {
+  color: #121212;
+}
+
+/* Pill Button Styles */
+.pill-btn {
+  width: 150px;
+  height: 30px;
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+  margin: 6px auto;
+  background-color: #193646;
+  position: relative;
+  overflow: hidden;
+  border: 2px solid #e5e0e6;
+  /* Touch-friendly feedback */
+  -webkit-tap-highlight-color: rgba(229, 224, 230, 0.3);
+  touch-action: manipulation;
+  /* Prevent iOS Safari touch delay */
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+.pill-btn-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.pill-btn-icon {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+.pill-btn-icon img.icon {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.pill-btn-text {
+  color: #e0e0e0;
+  font-size: 10px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.pill-btn.active {
+  background-color: #e5e0e6;
+}
+.pill-btn.active .pill-btn-text {
+  color: #193646;
+}
+.pill-btn .icon.active,
+.pill-btn .icon.inactive {
+  display: none;
+}
+.pill-btn .icon.inactive {
+  display: block !important;
+}
+.pill-btn.active .icon.active {
+  display: block !important;
+}
+.pill-btn.active .icon.inactive {
+  display: none !important;
+}
+.pill-btn.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+/* Touch-specific feedback for pill buttons */
+.pill-btn:active {
+  background-color: #e5e0e6 !important;
+  transform: scale(0.95);
+  transition: all 0.1s ease;
+}
+
+.pill-btn:active .pill-btn-text {
+  color: #193646 !important;
+}
+
+/* Pressed state class for JavaScript control */
+.pill-btn.pressed {
+  background-color: #e5e0e6 !important;
+  transform: scale(0.95);
+}
+
+.pill-btn.pressed .pill-btn-text {
+  color: #193646 !important;
+}
+
+/* Specific styling for preset buttons in modal */
+.preset-btn {
+  padding: 10px 15px;
+  /* Ensure touch feedback */
+  -webkit-tap-highlight-color: rgba(229, 224, 230, 0.3);
+  touch-action: manipulation;
+}
+
+.preset-btn:active {
+  background-color: #193646 !important; /* Keep original background */
+  transform: none !important; /* No scale effect */
+  transition: none !important; /* No transition */
+}
+
+.preset-btn:active .pill-btn-text {
+  color: #e0e0e6 !important; /* Keep original text color */
+}
+
+.preset-btn.pressed {
+  background-color: #e5e0e6 !important;
+  transform: scale(0.95);
+}
+
+.preset-btn.pressed .pill-btn-text {
+  color: #193646 !important;
+}
+
+/* Value Controls */
+.numeric-control {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.control-label {
+  font-size: 12px;
+  color: #e5e0e6;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+/* Set button press states - matching existing pill-btn patterns */
+.set-btn {
+  /* Inherits all .pill-btn styles since it already has that class */
+  transition: all 0.2s ease; /* Match existing button transition */
+}
+
+.set-btn.pressed {
+  background-color: #e5e0e6 !important; /* Match existing active state */
+  transform: scale(0.96); /* Match existing active transform */
+  box-shadow: none; /* Match existing active shadow */
+}
+
+.set-btn.pressed .pill-btn-text {
+  color: #193646; /* Match existing active text color */
+}
+
+.set-btn:active {
+  background-color: #e5e0e6; /* Match existing active pattern */
+  transform: scale(0.96); /* Match existing button:active transform */
+  box-shadow: none; /* Match existing button:active shadow */
+}
+
+.set-btn:active .pill-btn-text {
+  color: #193646; /* Match active text color */
+}
+
+.set-btn:hover {
+  transform: translateY(-3px); /* Match existing button:hover */
+  box-shadow: none; /* Match existing hover shadow */
+}
+.control-value-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #193646;
+  border-radius: 25px;
+  padding: 5px 15px;
+  width: 90%;
+}
+#preset-limits {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Creates two equal columns */
+  gap: 10px; /* Space between buttons */
+  padding: 10px;
+  width: 100%;
+  background-color: #193646;
+  border-radius: 25px;
+}
+
+/* Make buttons fill their grid cell */
+#preset-limits .pill-btn {
+  max-width: 150px;
+  margin: 5px 0;
+}
+.control-value {
+  color: #e0e0e0;
+  font-size: 20px;
+  margin: 0 15px;
+  min-width: 30px;
+  text-align: center;
+}
+.current-limit-display {
+  background-color: rgba(229, 224, 230, 0.1);
+  border-radius: 6px;
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 1px solid rgba(229, 224, 230, 0.3);
+}
+
+.current-limit-value {
+  font-size: 28px;
+  font-weight: bold;
+  color: #e5e0e6;
+  margin-top: 8px;
+}
+
+.current-limit-value .signal-value {
+  font-size: 28px;
+  font-weight: bold;
+}
+.control-btn {
+  background-color: transparent;
+  border: 1px solid #e0e0e0;
+  border-radius: 50%;
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding: 0;
+}
+
+.control-btn:hover {
+  background-color: rgba(229, 224, 230, 0.1);
+}
+
+/* Color Presets */
+.color-presets {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 10px 0;
+}
+.color-presets > * {
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+/* Toggle Switch */
+.toggle-switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 30px;
+  margin: 10px auto;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
+}
+.toggle-switch-input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.toggle-switch-slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #193646;
+  border: 2px solid #e5e0e6;
+  transition: 0.4s;
+  border-radius: 34px;
+}
+.toggle-switch-slider:before {
+  position: absolute;
+  content: "";
+  height: 22px;
+  width: 22px;
+  left: 2px;
+  bottom: 2px;
+  background-color: #e5e0e6;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+.toggle-switch-input:checked + .toggle-switch-slider {
+  background-color: #e5e0e6;
+}
+.toggle-switch-input:checked + .toggle-switch-slider:before {
+  transform: translateX(26px);
+  background-color: #193646;
+}
+
+/* ==========================================================================
+       Navigation & Tab Interfaces
+       ========================================================================== */
+
+/* Tab Navigation at Bottom */
+.tab-navigation {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #193646;
+  border-top: 2px solid #e5e0e6;
+  margin: 0 30px;
+  z-index: 1000;
+}
+.home-logo {
+  width: auto;
+  height: 80px;
+  object-fit: contain;
+}
+.tab-button {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  padding: 8px;
+  background-color: transparent;
+}
+.tab-button .icon {
+  width: 100px;
+  height: 100px;
+  transition: opacity 0.3s;
+}
+.tab-button .icon.active {
+  display: none;
+}
+.tab-button .icon.inactive {
+  display: block;
+}
+.tab-button.active .icon.active {
+  display: block;
+}
+.tab-button.active .icon.inactive {
+  display: none;
+}
+.tab-content {
+  display: none;
+}
+.tab-content.active {
+  display: block;
+  animation: fadeIn 0.3s;
+}
+
+/* RGB Zone Navigation */
+.rgb-zone-tabs {
+  display: flex;
+  border-bottom: 2px solid rgba(229, 224, 230, 0.5);
+  margin-bottom: 15px;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+.rgb-zone-button {
+  background-color: transparent;
+  color: #e0e0e0;
+  opacity: 0.5;
+  border: none;
+  padding: 8px 15px;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.rgb-zone-button.active {
+  color: #fff;
+  opacity: 1;
+}
+.rgb-zone-content {
+  display: none;
+}
+
+.rgb-zone-content.active {
+  display: flex; /* Change from block to flex */
+  flex-direction: column; /* Stack children vertically */
+  align-items: center; /* Center horizontally */
+  animation: fadeIn 0.3s;
+}
+
+/* Vertical RGB Zone Layout */
+.rgb-container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  gap: 20px;
+}
+
+.rgb-zone-tabs-vertical {
+  display: flex;
+  flex-direction: column;
+  min-width: 120px;
+  gap: 8px;
+  border-right: 2px solid rgba(229, 224, 230, 0.3);
+  padding-right: 15px;
+  margin-right: 15px;
+}
+
+.rgb-zone-button-vertical {
+  width: 150px;
+  height: 30px;
+  border-radius: 25px;
+  display: flex;
+  color: #e5e0e6;
+  font-size: 10px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+  margin: 6px auto;
+  background-color: #193646;
+  position: relative;
+  overflow: hidden;
+  border: 2px solid #e5e0e6;
+  /* Touch-friendly feedback */
+  -webkit-tap-highlight-color: rgba(229, 224, 230, 0.3);
+  touch-action: manipulation;
+  /* Prevent iOS Safari touch delay */
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+.rgb-zone-button-vertical.active {
+  background-color: #e5e0e6;
+  color: #193646;
+}
+
+.rgb-zone-panels-vertical {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Accessory Zone Navigation */
+.accessory-zone-tabs {
+  display: flex;
+  border-bottom: 2px solid rgba(229, 224, 230, 0.5);
+  margin-bottom: 5px;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+.accessory-zone-button {
+  background-color: transparent;
+  color: #e0e0e0;
+  opacity: 0.5;
+  border: none;
+  padding: 8px 15px;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.accessory-zone-button.active {
+  color: #fff;
+  opacity: 1;
+}
+.accessory-zone-content {
+  display: none;
+}
+.accessory-zone-content.active {
+  display: block;
+  animation: fadeIn 0.3s;
+}
+
+/* ==========================================================================
+       Module-Specific Styles
+       ========================================================================== */
+
+/* ---- Power & Solar Components ---- */
+.charge-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.charge-icons img {
+  width: 20px;
+  height: 20px;
+  margin: 0 5px;
+  transition: filter 0.3s ease;
+}
+
+/* Glow effect for shore charge icon when positive consumption */
+.charge-icon.glowing {
+  filter: drop-shadow(0 0 8px #00ff88) brightness(1.3);
+  animation: pulse-glow 2s infinite alternate;
+}
+
+@keyframes pulse-glow {
+  0% {
+    filter: drop-shadow(0 0 8px #00ff88) brightness(1.3);
+  }
+  100% {
+    filter: drop-shadow(0 0 12px #00ff88) brightness(1.5);
+  }
+}
+.power-controls-grid {
+  display: flex;
+  justify-content: space-between;
+}
+.power-controls-grid > div:not(:last-child) {
+  margin-right: 50px;
+}
+.power-column {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.battery-details span {
+  font-size: 20px;
+}
+.power-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #193646;
+  border-radius: 8px;
+  text-align: center;
+}
+#multiplus-controls {
+  display: flex;
+  flex-direction: row;
+}
+#multiplus-controls .pill-btn {
+  margin: 10px;
+}
+
+/* Button grid for MultiPlus controls - 2x2 layout */
+.button-grid-2x2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+}
+
+/* Make the third button (Charger Only) span across both columns */
+.button-grid-2x2 .multiplus-btn:nth-child(3) {
+  grid-column: 1 / -1;
+  justify-self: center;
+}
+
+.power-label {
+  text-align: left;
+  width: 100%;
+  border-bottom: 2px solid #e5e0e6;
+}
+.power-status {
+  margin-top: 10px;
+  color: #e5e0e6;
+}
+.battery-indicator {
+  width: 80%;
+  height: 25px;
+  background-color: #193646;
+  border-radius: 12px;
+  overflow: hidden;
+  margin: 10px 0;
+}
+.battery-level {
+  height: 100%;
+  background-color: #4caf50;
+  border-radius: 12px;
+}
+.power-value {
+  font-size: 24px;
+  font-weight: bold;
+  color: #e5e0e6;
+  margin: 15px 0;
+}
+.solar-data {
+  width: 100%;
+  text-align: left;
+}
+.data-section {
+  margin-bottom: 10px;
+}
+.data-section h4 {
+  color: #e5e0e6;
+  margin: 5px 0;
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+.data-row {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: 5px 0;
+}
+.data-label {
+  text-align: left;
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+.data-value {
+  text-align: right;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+/* ---- HVAC & Thermostat ---- */
+.hvac-tabs {
+  display: flex;
+  border-bottom: 2px solid #e5e0e6;
+  margin-bottom: 10px;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+.hvac-tab-button {
+  background-color: transparent;
+  color: #e5e0e6;
+  opacity: 0.5;
+  border: none;
+  padding: 5px 20px;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.hvac-tab-button.active {
+  color: #fff;
+  opacity: 1;
+}
+.hvac-tab-content {
+  display: none;
+}
+.hvac-tab-content.active {
+  display: block;
+  animation: fadeIn 0.3s;
+  -webkit-animation: fadeIn 0.3s;
+}
+/* Replace gap in HVAC control grid with margin */
+.hvac-control-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.hvac-control-grid > *:not(:last-child) {
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+
+.hvac-control-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 0px 15px 15px 15px;
+  background-color: #193646;
+  width: 150px;
+}
+.two-column-control {
+  width: auto !important;
+  min-width: 300px;
+}
+
+.vent-controls-container {
+  display: flex;
+  width: 100%;
+  gap: 15px;
+}
+
+.vent-column {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.two-column-control .pill-btn {
+  width: 100%;
+  margin: 5px 0;
+}
+
+.two-column-control .numeric-control {
+  margin-top: 0;
+}
+#heat-source {
+  border-right: 2px solid #e5e0e6;
+  border-left: 2px solid #e5e0e6;
+}
+#ac-mode {
+  border-right: 2px solid #e5e0e6;
+}
+#ac-fan {
+  padding-left: 10px;
+}
+#vent-1 {
+  border-right: 2px solid #e5e0e6;
+  margin-right: 0px;
+}
+/* Ensure both vent controls are two-column by default */
+#vent-1,
+#vent-2 {
+  width: auto !important;
+  min-width: 260px; /* Reduce from 300px */
+  max-width: 280px; /* Add a maximum width */
+}
+
+/* Ensure both vent controls containers use flex layout */
+#vent-1 .vent-controls-container,
+#vent-2 .vent-controls-container {
+  display: flex !important;
+  width: 100%;
+  gap: 15px;
+}
+
+/* Narrower two-column control specifically for vent controls */
+#vent-1.two-column-control,
+#vent-2.two-column-control {
+  min-width: 260px; /* Reduce from 300px */
+  max-width: 280px; /* Add a maximum width */
+}
+
+/* Make the columns more compact */
+#vent-1 .vent-column,
+#vent-2 .vent-column {
+  padding: 0 5px; /* Reduce padding */
+}
+
+/* Make buttons in these sections more compact */
+#vent-1 .pill-btn,
+#vent-2 .pill-btn {
+  min-width: 100px; /* Limit minimum width */
+  padding: 8px 12px; /* Slightly smaller padding */
+}
+
+/* Adjust numeric control width */
+#vent-1 .numeric-control,
+#vent-2 .numeric-control {
+  width: 120px; /* Make controls more compact */
+}
+.hvac-label {
+  color: #e5e0e6;
+  margin-bottom: 15px;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+.hvac-status {
+  color: #e5e0e6;
+  margin-top: 10px;
+}
+.fan-speed-labels {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 5px;
+}
+.fan-speed-labels span {
+  font-size: 10px;
+  color: #e5e0e6;
+  letter-spacing: 0;
+}
+
+/* HVAC Container & Thermostat Layout */
+.hvac-container {
+  display: flex;
+}
+.hvac-container > *:not(:last-child) {
+  margin-right: 20px;
+}
+.hvac-tabs-column {
+  flex: 2;
+}
+.thermostat-column {
+  flex: 1;
+  max-height: 240px;
+  margin-top: 20px;
+}
+.thermostat {
+  background-color: #193646;
+  border-radius: 8px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  justify-content: center;
+}
+.thermostat > *:not(:last-child) {
+  margin-bottom: 15px;
+}
+.thermostat-title {
+  margin-bottom: 5px;
+}
+.thermostat-display {
+  margin: 10px 0;
+}
+.thermostat-controls {
+  width: 100%;
+  margin-top: 10px;
+}
+.current-temp {
+  color: #e0e0e0;
+  font-size: 48px;
+  font-weight: 300;
+  line-height: 1;
+}
+.target-temp {
+  color: #e0e0e0;
+  font-size: 48px;
+  font-weight: 300;
+  line-height: 1;
+}
+.temp-unit {
+  color: #e0e0e0;
+  font-size: 24px;
+  margin-left: 5px;
+}
+.thermostat-btn {
+  background-color: transparent;
+  border: 1px solid #e5e0e6;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding: 0;
+}
+.thermostat-btn:hover {
+  background-color: #193646;
+}
+.set-temp {
+  margin: 10px auto;
+  color: #e0e0e0;
+  font-size: 14px;
+  text-align: center;
+  width: 100%;
+  display: block;
+}
+.temp-slider-container {
+  width: 100%;
+  margin: 10px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.temp-slider {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 8px;
+  background: #e5e0e6;
+  border-radius: 5px;
+  outline: none;
+  width: 90%;
+  max-width: 200px;
+}
+.temp-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 40px;
+  height: 40px;
+  background: #193646;
+  border: 2px solid #e5e0e6;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.temp-slider::-moz-range-thumb {
+  width: 40px;
+  height: 40px;
+  background: #193646;
+  border: 2px solid #e5e0e6;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.power-status {
+  font-size: 2rem;
+}
+
+/* ---- Lighting Components ---- */
+.lighting-container {
+  display: flex;
+  flex-direction: row;
+  max-width: 750px;
+}
+.lighting-container > *:not(:last-child) {
+  margin-right: 20px;
+}
+.image-error {
+  width: 100%;
+  height: 180px;
+  background-color: #193646;
+  border: 2px dashed rgba(229, 224, 230, 0.3);
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.image-error::before {
+  content: "Image not found";
+  color: #e5e0e6;
+  font-size: 14px;
+  text-align: center;
+}
+.lighting-tabs-column {
+  flex: 2;
+}
+.lighting-image-column {
+  flex: 1;
+}
+.lighting-tabs {
+  display: flex;
+  border-bottom: 2px solid #e5e0e6;
+  margin-bottom: 5px;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+.lighting-tab-button {
+  background-color: transparent;
+  color: #e5e0e6;
+  opacity: 0.5;
+  border: none;
+  padding: 5px 20px;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.lighting-tab-button.active {
+  color: #fff;
+  opacity: 1;
+}
+.lighting-tab-content {
+  display: none;
+}
+.lighting-tab-content.active {
+  display: block;
+  animation: fadeIn 0.3s;
+  -webkit-animation: fadeIn 0.3s;
+}
+/* Add this to your CSS */
+.rgb-mode-btn.disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.mode-toggle {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.lighting-control-grid.two-column.rgb {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  margin: 15px;
+  min-width: 600px;
+}
+
+.switch-control-content.dimmer-content {
+  padding: 10px 0;
+}
+
+/* Switches Grid Layout - ES2018 Compatible - 2x5 Grid */
+.lighting-control-grid.switches {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+
+/* Create two rows for the 2x5 grid */
+.switches-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  margin-bottom: 20px; /* Spacing between rows */
+}
+
+.switches-row:last-child {
+  margin-bottom: 0;
+}
+
+/* Add gaps manually since gap isn't supported - spacing for 5 columns */
+.switches-row > .switch-control-item:not(:last-child) {
+  margin-right: 60px; /* Adjust spacing for 5 columns */
+}
+
+.switch-control-content.round-btn {
+  width: 64px;
+  height: 64px;
+}
+
+.switch-control-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  width: 100px; /* Reduced from 120px for better fit */
+  height: 120px; /* Reduced from 140px for better fit */
+}
+
+.switch-control-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  width: 100%;
+}
+
+.switch-control-content.dimmer-content {
+  padding: 20px 0;
+}
+
+.switch-label {
+  color: #e5e0e6;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 8px;
+  width: 100%;
+}
+
+/* Dimmer specific styles for switches grid - Horizontal, ES2018 Compatible */
+.dimmer-slider-container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 64px; /* Reduced from 80px to match smaller button size */
+}
+
+.dimmer-slider {
+  width: 80px; /* Reduced from 100px for better fit */
+  height: 15px;
+  /* Explicitly set transform to none for older browsers */
+  -webkit-transform: none;
+  -ms-transform: none;
+  transform: none;
+  -webkit-transform-origin: center;
+  -ms-transform-origin: center;
+  transform-origin: center;
+}
+
+.dimmer-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 30px;
+  height: 30px;
+  background: -webkit-linear-gradient(315deg, #4c6a9c, #193646);
+  background: linear-gradient(135deg, #4c6a9c, #193646);
+  border: 2px solid #e5e0e6;
+  border-radius: 50%;
+  margin-top: -7px;
+  cursor: pointer;
+}
+
+.dimmer-slider::-moz-range-thumb {
+  width: 30px;
+  height: 30px;
+  background: -moz-linear-gradient(315deg, #4c6a9c, #193646);
+  background: linear-gradient(135deg, #4c6a9c, #193646);
+  border: 2px solid #e5e0e6;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/* Internet Explorer specific */
+.dimmer-slider::-ms-thumb {
+  width: 30px;
+  height: 30px;
+  background: #4c6a9c;
+  border: 2px solid #e5e0e6;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/* Responsive adjustments for switches grid - ES2018 Compatible */
+@media (max-width: 768px) {
+  .switches-row > .switch-control-item:not(:last-child) {
+    margin-right: 50px; /* Slightly reduced for mobile but still more spacious than before */
+  }
+  
+  .switch-control-item {
+    width: 100px;
+    height: 120px;
+  }
+  
+  .dimmer-slider {
+    width: 80px; /* Smaller on mobile */
+  }
+}
+
+/* For flex-based lighting control grid, replace gap with margins */
+.lighting-control-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* For grid-based two-column layout, simulate gap with margins */
+.lighting-control-grid.two-column {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto auto;
+  margin: 15px;
+}
+
+/* Make each grid item properly fit in the cell */
+.lighting-control-item,
+.button-item {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Consistent styling for buttons in grid */
+.button-item {
+  margin: 0;
+  text-align: center;
+}
+
+.button-item .button-label {
+  margin-bottom: 8px;
+  font-size: 10px;
+}
+
+.lighting-control-grid.two-column.rgb {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.lighting-control-grid.two-column > * {
+  margin-bottom: 20px;
+}
+.lighting-control-grid.two-column > *:nth-child(2n) {
+  margin-right: 0;
+}
+
+.lighting-column {
+  display: flex;
+  flex-direction: column;
+}
+.lighting-column > *:not(:last-child) {
+  margin-bottom: 5px;
+}
+.mode-toggle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+}
+.button-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.button-column-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.button-column.round-btn {
+  max-width: 64px;
+  width: auto;
+}
+.button-1,
+.button-2,
+.button-3 {
+  display: flex;
+  flex-direction: column; /* or 'row' if you prefer them side-by-side */
+  justify-content: center;
+  align-items: center;
+  margin: 5px;
+}
+.slider-group {
+  /* Reinforce the existing centering properties */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  text-align: center;
+}
+
+.lighting-label {
+  /* Make sure the label takes full width and centers text */
+  display: block;
+  width: 100%;
+  text-align: center !important;
+  margin-bottom: 8px;
+}
+
+.color-slider-container {
+  /* Ensure slider container is centered */
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.slider-group .slider-container {
+  margin: 5px 0;
+}
+
+/* ---- Plumbing Components ---- */
+.plumbing-container {
+  display: flex;
+  margin-top: 20px;
+  gap: 15px;
+  width: 100%;
+  justify-content: center;
+}
+.plumbing-controls-column {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-width: 200px;
+}
+.plumbing-controls-column > *:not(:last-child) {
+  margin-bottom: 10px;
+}
+.plumbing-control-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5px;
+  background-color: #193646;
+  border-radius: 8px;
+  text-align: center;
+}
+.plumbing-label {
+  color: #e5e0e6;
+  margin-bottom: 15px;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+.plumbing-status {
+  color: #e5e0e6;
+  margin-top: 10px;
+}
+.plumbing-tanks-column {
+  flex: 4;
+  background-color: #193646;
+  border-radius: 8px;
+  padding: 15px;
+  min-width: 600px;
+}
+
+/* Tank Gauge Layout - Improved for better fit */
+.tank-gauge-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: stretch;
+  height: 3000px;
+  gap: 25px;
+  padding: 10px;
+  background-color: #193646;
+  border-radius: 8px;
+  margin: 5px;
+}
+
+.tank-gauge-item {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  min-width: 80px;
+  max-width: 120px;
+  padding: 10px;
+  transition: all 0.3s ease;
+}
+
+.tank-label {
+  color: #e5e0e6;
+  margin-bottom: 10px;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.tank-percentage {
+  color: #e5e0e6;
+  font-size: 16px;
+  margin-top: 8px;
+  font-weight: bold;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+/* Vertical Gauge - Improved proportions */
+.vertical-gauge-container {
+  display: flex;
+  height: 180px;
+  width: 100%;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+
+.vertical-gauge {
+  width: 35px;
+  height: 100%;
+  background-color: #1a3847;
+  border-radius: 18px;
+  overflow: hidden;
+  position: relative;
+  border: 2px solid rgba(229, 224, 230, 0.2);
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.gauge-level {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: linear-gradient(to top, #5e7887 0%, #7a909f 50%, #96a8b7 100%);
+  border-radius: 16px;
+  transition: height 0.6s ease-in-out;
+  box-shadow: 0 0 8px rgba(94, 120, 135, 0.4);
+}
+.gauge-markers {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  margin-left: 5px;
+}
+.gauge-markers span {
+  font-size: 10px;
+  color: #e5e0e6;
+  position: relative;
+  left: -15px;
+  letter-spacing: 0;
+}
+
+/* Responsive tank layout for smaller screens */
+@media (max-width: 768px) {
+  .plumbing-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .plumbing-tanks-column {
+    min-width: auto;
+    width: 100%;
+  }
+
+  .tank-gauge-container {
+    height: 220px;
+    gap: 10px;
+    padding: 8px;
+  }
+
+  .tank-gauge-item {
+    min-width: 70px;
+    max-width: 100px;
+    padding: 8px;
+  }
+
+  .vertical-gauge-container {
+    height: 140px;
+  }
+
+  .vertical-gauge {
+    width: 30px;
+  }
+
+  .tank-label {
+    font-size: 10px;
+    margin-bottom: 8px;
+  }
+
+  .tank-percentage {
+    font-size: 14px;
+    margin-top: 6px;
+  }
+}
+
+/* ==========================================================================
+       Modals & Popups
+       ========================================================================== */
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(25, 54, 70, 0.7); /* Semi-transparent background */
+  backdrop-filter: blur(5px); /* Blur effect for browsers that support it */
+  -webkit-backdrop-filter: blur(5px); /* For Safari */
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  margin: 0;
+  padding: 0;
+  transition: backdrop-filter 0.3s ease, background-color 0.3s ease;
+}
+
+.modal-content {
+  background-color: #193646;
+  border: 2px solid #e5e0e6;
+  border-radius: 8px;
+  width: 80%;
+  max-width: 400px;
+  color: #e5e0e6;
+  animation: fadeIn 0.3s;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 20px;
+  border-bottom: 1px solid #e5e0e6;
+}
+.modal-header h3 {
+  margin: 0;
+  color: #e5e0e6;
+}
+.close-modal {
+  background: transparent;
+  border: none;
+  font-size: 24px;
+  color: #e5e0e6;
+  cursor: pointer;
+}
+
+.modal-body {
+  padding: 20px;
+}
+
+.modal-footer {
+  padding: 15px;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 10px; /* instead of gap */
+  border-top: 1px solid #e5e0e6;
+}
+
+#close-limit {
+  color: #e5e0e6;
+}
+/* If you need spacing between modal footer children, consider:
+    .modal-footer > *:not(:last-child) {
+      margin-right: 10px;
+    }
+    */
+
+/* ==========================================================================
+       Animations
+       ========================================================================== */
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes gentle-pulse {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 rgba(47, 68, 92, 0.4);
+  }
+  70% {
+    -webkit-box-shadow: 0 0 0 10px rgba(47, 68, 92, 0);
+  }
+  100% {
+    -webkit-box-shadow: 0 0 0 0 rgba(47, 68, 92, 0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes gentle-pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(47, 68, 92, 0.4);
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba(47, 68, 92, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(47, 68, 92, 0);
+  }
+}
+
+/* AC Limit Modal specific improvements */
+#ac-limit-modal .preset-btn {
+  /* Ensure consistent touch feedback */
+  transition: all 0.1s ease;
+  /* Slightly larger touch target */
+}
+
+#ac-limit-modal .preset-btn:active,
+#ac-limit-modal .preset-btn.pressed {
+  background-color: #e5e0e6 !important;
+  transform: scale(0.95);
+  border-color: #193646;
+}
+
+#ac-limit-modal .preset-btn:active .pill-btn-text,
+#ac-limit-modal .preset-btn.pressed .pill-btn-text {
+  color: #193646 !important;
+}
+
+/* Improve modal touch experience */
+#ac-limit-modal .modal-content {
+  /* Prevent zoom on double tap */
+  touch-action: manipulation;
+}
+
+/* Status Indicator Styles */
+.status-indicator {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid #e5e0e6;
+  background-color: #193646;
+  margin: 0 5px;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.status-indicator.active {
+  background-color: #4caf50; /* Green for active */
+  border-color: #4caf50;
+  box-shadow: 0 0 10px rgba(76, 175, 80, 0.5);
+}
+
+.status-indicator.inactive {
+  background-color: #f44336; /* Red for inactive */
+  border-color: #f44336;
+  box-shadow: 0 0 10px rgba(244, 67, 54, 0.5);
+}
+
+/* Alternative rectangular indicator */
+.status-indicator.rectangular {
+  width: 40px;
+  height: 15px;
+  border-radius: 8px;
+}
+
+/* Text-based status indicator */
+.status-indicator.text {
+  width: auto;
+  height: auto;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 10px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #e5e0e6;
+  background-color: #193646;
+  border: 1px solid #e5e0e6;
+}
+
+.status-indicator.text.active {
+  background-color: #4caf50;
+  color: white;
+  border-color: #4caf50;
+}
+
+.status-indicator.text.inactive {
+  background-color: #f44336;
+  color: white;
+  border-color: #f44336;
+}
+
+/* Status indicator with label */
+.status-indicator-group {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.status-indicator-label {
+  font-size: 12px;
+  color: #e5e0e6;
+  font-weight: 500;
+}

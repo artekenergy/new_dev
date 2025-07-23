@@ -1,0 +1,15 @@
+{
+  "projectTitle": "serv-plus-dev_7-14-25",
+  "netlistChecksum": "1436543022",
+  "empirBusStudioConfigFileId": "22f45c72-57e0-4fd5-a5de-01982eff9c30",
+  "empirBusStudioConfigFileVersion": "+",
+  "projectFileId": "f5415c45-2f99-4749-a477-01980b6198f2",
+  "projectFileVersion": "2+",
+  "exportGuid": "",
+  "wduWebVersion": "3.4.0",
+  "graphicsToolVersion": "1.65.1+31230f13bbd347a6f1ddf00888a0d5b7f9bfbc87",
+  "buildEnvironment": "Production",
+  "targetConfiguration": "test",
+  "targetPlatform": "WDU",
+  "targetPlatformVersion": "3.0.0"
+}
